@@ -12,6 +12,8 @@ services:
 
   mysql:
     image: mysql:8.0
+    platform: linux/amd64
+    #M1mac用の設定
     container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
