@@ -12,4 +12,5 @@ RUN apt-get update &&\
 
 ENV MYSQL_URL='mysql://root:root@tcp(mysql:3306)/react_go_app?parseTime=true'
 
-#COPY init.sql /root/migrations/example1/init.sql
+COPY 000001_init.up.sql /root/migrations/example1/000001_init.up.sql
+COPY 000001_init.down.sql /root/migrations/example1/000001_init.down.sql
