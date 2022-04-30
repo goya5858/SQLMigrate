@@ -4,8 +4,8 @@ services:
     build: .
     container_name: golang_container 
     tty: true 
-    environment:
-      - MYSQL_URL='mysql://root:root@tcp(mysql:3306)/react_go_app?parseTime=true'
+    #environment:
+    #  - MYSQL_URL='mysql://root:root@tcp(mysql:3306)/react_go_app?parseTime=true'
     # Herokuでデプロイする場合はここをマニュアルで情報取得して(heroku config) 入力
     # migrate create -ext sql -dir migrations/example1 -seq create_users_table
     # migrate -database ${MYSQL_URL} -path migrations/example1 up コマンド用の設定
